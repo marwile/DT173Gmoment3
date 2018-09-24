@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/********************
+tranan flygbolaget ab
+author: maria ågren
+sass
+****************************/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #7faeec;
+  color: #edf0f3;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+}
+
+.header h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #edf0f3;
+  font-size: 5em;
+  text-shadow: #0b2d5a 2px 3px;
+  letter-spacing: 0.05em;
+  margin: 1em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 0.4em 0.4em 0.4em 2em;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-wrapper {
+  background-color: #0f0f3d;
+  width: 50%;
+  padding: 2em;
+}
+
+.main-wrapper p {
+  font-size: 1.2em;
+  color: #edf0f3;
+}
+
+.side-wrapper {
+  width: 25%;
+  background-color: #262626;
+  padding: 2em;
+}
+
+.side-wrapper h3 {
+  background-color: #2d2db8;
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+.side-wrapper p {
+  font-size: 1.2em;
+  color: #edf0f3;
+}
+
+.city-list {
+  padding: 1em 0 2em 3.5em;
+}
+
+.city-list li {
+  color: #edf0f3;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.booking-button {
+  background-color: #428f42;
+  margin: 1em;
+  padding: 0.8em 2.5em o 0.8em 2.5em;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 3px #edf0f3;
+          box-shadow: 2px 3px #edf0f3;
+  margin-left: 3em;
+}
+
+.booking-button a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #edf0f3;
+}
+
+.booking-button a:hover {
+  color: #5a380b;
+}
+
+.banner {
+  background-color: #abcaf3;
+  width: 100%;
+  margin: 0;
+  padding: 4em;
+  text-align: center;
+}
+
+.banner p {
+  color: #0f0f3d;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.bottom-wrapper {
+  width: 23.4%;
+  background-color: #1e1e7a;
+  padding: 2em;
+}
+
+.bottom-wrapper h3 {
+  background-color: #2d2db8;
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+#flyg {
+  max-width: 100%;
+}
+
+.navigation {
+  text-align: right;
+  margin: 2em 6em 3em 6em;
+}
+
+.navigation a {
+  color: #0b2d5a;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.navigation a:hover {
+  color: #5a380b;
+}
+
+.navigation .menu-icon {
+  display: none;
+}
+
+.sale {
+  text-align: left;
+}
+
+#salefifty {
+  color: red;
+}
+
+.day-base, .mon, .tue, .wed, .thu, .fri, .sat, .sun {
+  list-style-type: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: #0b2d5a;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0.4em;
+}
+
+.mon {
+  background-color: #f7d7dc;
+}
+
+.tue {
+  background-color: lightblue;
+}
+
+.wed {
+  background-color: #bdf1bd;
+}
+
+.thu {
+  background-color: lightyellow;
+}
+
+.fri {
+  background-color: lightcyan;
+}
+
+.sat {
+  background-color: lightgrey;
+}
+
+.sun {
+  background-color: #f3c5c5;
+}
+
+footer {
+  background-color: #0f0f3d;
+  padding: 8em;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.5em;
+  color: #edf0f3;
+  line-height: 1.5em;
+}
+
+/*smaller screen media queries*/
+@media only screen and (max-width: 858px) {
+  #menu-bar {
+    width: 60px;
+  }
+  .header h1 {
+    margin-top: 2em;
+    font-size: 3em;
+  }
+  .navigation {
+    margin: 2em 0 0.5em 0;
+  }
+  .navigation a {
+    display: none;
+  }
+  .navigation a.menu-icon {
+    display: inline;
+    position: absolute;
+    right: 2em;
+    top: 0;
+  }
+  .navigation.responsive {
+    position: relative;
+  }
+  .navigation.responsive a.menu-icon {
+    position: absolute;
+    right: 0em;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.9em;
+  }
+  .main-wrapper, .side-wrapper, .bottom-wrapper {
+    width: 100%;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

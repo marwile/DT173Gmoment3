@@ -1,0 +1,8 @@
+@mixin list{
+    padding:1em 0 2em 3.5em;
+  li{
+color:$font-color;
+font-size:$large-font;
+line-height:1.8em;
+  }
+}
